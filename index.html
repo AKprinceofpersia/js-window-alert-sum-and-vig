@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var num=0;
+var sum=0;
+var count=0;
+while(num!='پایان')
+{
+num=window.prompt('عدد مورد نظر را وارد کنید','پایان');
+if(isNaN(parseInt(num)))
+{
+if(num=='پایان')
+{
+window.alert("جمع اعداد"+sum);
+window.alert("میانگین اعداد"+(sum/count));
+}
+}
+else{
+    num=parseInt(num);
+    if(num>=0 && num<=100000000000000000000000000000000000000000000000000000000000000)
+{
+    sum=sum+num;
+count++;
+
+}
+else
+{
+    window.alert('عدد خارج از محدوده است')
+}
+
+}
+}
+    </script>
+</body>
+</html>
